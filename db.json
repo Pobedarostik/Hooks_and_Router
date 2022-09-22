@@ -1,0 +1,21 @@
+{
+  "person": [
+    {
+      "id": 1,
+      "name": "Rostyslav",
+      "surname": "Pobeda"
+    },
+    {
+      "id": 2,
+      "name": "Kateryna",
+      "surname": "Hlagyi"
+    }
+  ],
+  "hobby": [
+    {
+      "id": 1,
+      "title": "IT"
+    },
+    { "id": 2, "title": "Tik-Tok" }
+  ]
+}
