@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Section from './Section';
-import FeedbackOptions from './FeedbackOptions';
-import Notification from './Notification';
-import Statistics from './Statistics';
+import Section from '../components/feedBack/Section';
+import FeedbackOptions from '../components/feedBack/FeedbackOptions';
+import Notification from '../components/feedBack/Notification';
+import Statistics from '../components/feedBack/Statistics';
 
 import React from 'react';
 
@@ -43,24 +43,24 @@ function FeedBack() {
 
   return (
     <>
-      <div className='feedBack'>
-      <Section title="Please leave feedback">
-        <FeedbackOptions options={options} onLeaveFeedback={onLeaveFeedback} />
-      </Section>
-
-      {total === 0 ? (
-        <Notification message="No feedback given" />
-      ) : (
-        <Section title="Statistics">
-          <Statistics
-            good={good}
-            neutral={neutral}
-            bad={bad}
-            total={total}
-            positivePercentage={countPositiveFeedbackPercentage()}
-          />
+      <div className="feedBack">
+        <Section title="Please leave feedback">
+          <FeedbackOptions options={options} onLeaveFeedback={onLeaveFeedback} />
         </Section>
-      )}
+
+        {total === 0 ? (
+          <Notification message="No feedback given" />
+        ) : (
+          <Section title="Statistics">
+            <Statistics
+              good={good}
+              neutral={neutral}
+              bad={bad}
+              total={total}
+              positivePercentage={countPositiveFeedbackPercentage()}
+            />
+          </Section>
+        )}
       </div>
     </>
   );

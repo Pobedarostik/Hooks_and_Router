@@ -10,9 +10,9 @@ import './App.css';
 // import Home from './pages/Home';
 // import About from './pages/About';
 
-import PhoneBook from './components/phoneBook/PhoneBook';
-import FeedBack from './components/feedBack/FeedBack';
-import SearchPhoto from './components/searchPhoto/SearchPhoto';
+import PhoneBook from './pages/PhoneBook';
+import FeedBack from './pages/FeedBack';
+import SearchPhoto from './pages/SearchPhoto';
 import Navigation from './components/Navigation/Navigation';
 
 function App() {

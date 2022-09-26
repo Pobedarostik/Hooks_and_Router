@@ -2,8 +2,8 @@ import { useState } from 'react';
 
 import React from 'react';
 
-import { ContactForm, Filter, ContactList } from '../phoneBook';
-import useLocalStorage from '../../hooks/useLocalStorage';
+import { ContactForm, Filter, ContactList } from '../components/phoneBook';
+import useLocalStorage from '../hooks/useLocalStorage';
 import shortid from 'shortid';
 
 function PhoneBook() {
